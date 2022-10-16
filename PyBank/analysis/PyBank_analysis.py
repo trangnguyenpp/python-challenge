@@ -34,10 +34,10 @@ total_months = len(months)
 total_earnings = sum(total_int)
 
 #calculate average change
-change = [b - a for a, b in zip(total_int, total_int[1:])]
+change = [b - a for a, b in zip(total_int, total_int[1:])] # calculate the change between 2 consecutive months
 average_change = round(sum(change)/len(change),2)
         
-#find greatest increase in profits:
+#find greatest increase and decrease in profits:
 greatest_increase_in_profits = max(change)
 greatest_decrease_in_profits = min(change)
 
